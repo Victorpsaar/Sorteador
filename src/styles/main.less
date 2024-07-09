@@ -1,0 +1,62 @@
+@fontPrincipal: "Roboto", sans-serif;
+@fontTitulo: "Lobster", cursive;
+@fontColor: #fff;
+@fontBtn: #000;
+@backColor: #eb3b5a;
+@btnColor: #f7b731;
+
+body {
+    background-color: @backColor;
+    font-family: @fontPrincipal;
+    color: @fontColor;
+}
+
+h1 {
+    font-family: @fontTitulo;
+    font-size: 3em;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2em;
+    text-align: center;
+}
+
+button {
+    padding: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.3em;
+    font-family: @fontPrincipal;
+    margin-top: 16px;
+    border-radius: 8px;
+    background-color: @btnColor;
+    color: @fontBtn;
+}
+
+input {
+    display: block;
+    margin: 16px auto 0;
+    font-size: 2em;
+    max-width: 120px;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    color: @fontColor;
+    border-bottom: 1px solid @fontColor;
+}
+
+.result {
+    padding: 16px;
+    margin-top: 120px;
+    border: 8px dotted #fff;
+    display: none;
+
+    span {
+        font-weight: bold;
+        font-size: 3em;
+        display: block;
+    }
+}
